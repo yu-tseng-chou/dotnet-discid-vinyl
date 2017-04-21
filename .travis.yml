@@ -1,0 +1,14 @@
+language: csharp
+addons:
+  apt:
+    packages:
+    - nunit-console
+sudo: required
+install:
+  - sudo apt-get install -qq libdiscid0-dev
+  - nuget restore dotnet-discid.sln
+script:
+  - xbuild /p:Configuration=Debug   dotnet-discid.sln
+  - xbuild /p:Configuration=Release dotnet-discid.sln
+  - nunit-console -framework=4.0 dotnet-discid-test/bin/Release/DotNetDiscIdTest.dll
+  - nunit-console -framework=4.0 dotnet-discid-test/bin/Debug/DotNetDiscIdTest.dll

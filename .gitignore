@@ -1,0 +1,31 @@
+# User-specific files
+.vs
+*.suo
+*.user
+*.userprefs
+*.sln.docstates
+StyleCop.Cache
+
+# NuGet packages
+**/packages/
+
+# Build results
+[Bb]in/
+[Oo]bj/
+*.nupkg
+
+# Test results
+*/test-results/*
+
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# Folder config file
+Desktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# Mac desktop service store files
+.DS_Store

@@ -1,0 +1,13 @@
+# Changelog
+
+## 0.2.1 (2016-??-??)
+* Fixed NuGet targets.
+* Includes libdiscid 0.6.1.
+
+## 0.2.0 (2013-06-30)
+* Signed assembly.
+* Internal code cleanup.
+* Provide a source and binary release.
+
+## 0.1.2 (2013-06-28)
+* First public NuGet release.
