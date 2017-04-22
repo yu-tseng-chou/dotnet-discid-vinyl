@@ -45,7 +45,8 @@ namespace DiscIdExample
 
                 // Display result 
                 double[,] groove_counts = ((double[,])((object[])result)[0]) as double[,];
-                
+                groove_counts[0, 0] -= 0.5d;
+
                 int sum         = 150;
                 int[] offsets   = new int[groove_counts.Length];
                 offsets[0]      = 150;
